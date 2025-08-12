@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | MP General Contracting</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Our Portfolio</h1>
+    <p>See the quality of our completed projects</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <section class="portfolio">
+    <div class="portfolio-item"><img src="img1.jpg" alt="Project 1" /></div>
+    <div class="portfolio-item"><img src="img2.jpg" alt="Project 2" /></div>
+    <div class="portfolio-item"><img src="img3.jpg" alt="Project 3" /></div>
+    <div class="portfolio-item"><img src="img4.jpg" alt="Project 4" /></div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MP General Contracting</p>
+  </footer>
+
+  <script src="lightbox.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.content, .hero, .gallery-grid');
+
+    const options = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
+</body>
+</html>
