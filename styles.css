@@ -101,7 +101,7 @@ nav a.active {
   background: url('hero_image.jpg') center center / cover no-repeat;
   color: var(--light);
   text-align: center;
-  padding: 15rem 2rem;
+  padding: 12rem 2rem;
   font-family: 'Amboy Black', serif;
   font-weight: 900;
   font-size: 3rem;
