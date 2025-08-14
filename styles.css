@@ -101,7 +101,7 @@ nav a.active {
   background: url('hero_image.jpg') center center / cover no-repeat;
   color: var(--light);
   text-align: center;
-  padding: 12rem 2rem;
+  padding: 15rem 2rem;
   font-family: 'Amboy Black', serif;
   font-weight: 900;
   font-size: 3rem;
@@ -273,14 +273,21 @@ section[id] {
 
 .logo-company .logo {
   max-width: 180px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .logo-company h3 {
   font-family: 'Amboy Black', serif;
   font-weight: 900;
-  font-size: 2rem;
-  color: var(--light);
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+.logo-company h4 {
+  font-family: 'Amboy Black', serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 4rem;
 }
 
 .contact-details {
@@ -333,4 +340,98 @@ section[id] {
   .social-media {
     justify-content: center;
   }
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1 1 350px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services-section .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  font-family: 'Amboy Black', serif;
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 1rem 0 0.5rem;
+}
+
+.service-card p {
+  padding: 0 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    order: 2;
+  }
+}
+
+.services-link {
+  color: var(--accent);
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.services-link:hover {
+  color: var(--bronze);
 }
