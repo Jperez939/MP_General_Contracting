@@ -212,26 +212,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    font-size: 2rem;
-  }
-  nav ul {
-    flex-wrap: wrap;
-  }
-  nav li {
-    margin: 0.3rem 0.6rem;
-  }
-  .hero {
-    font-size: 2.1rem;
-    padding: 4rem 1rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-}
-
 /* Smooth scroll anchor offset fix */
 section[id] {
   scroll-margin-top: 70px;
@@ -320,26 +300,10 @@ section[id] {
 .social-media a img {
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s ease;
 }
 
 .social-media a:hover img {
-  filter: brightness(0) invert(0.75) sepia(1) saturate(6) hue-rotate(30deg);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .contact-info .contact-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .contact-details {
-    flex: none;
-  }
-  .social-media {
-    justify-content: center;
-  }
+  filter: brightness(0) invert(0.75) sepia(1) saturate(3) hue-rotate(330deg);
 }
 
 /* About Section */
@@ -414,17 +378,6 @@ section[id] {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text {
-    order: 2;
-  }
-}
-
 .services-link {
   color: var(--accent);
   font-weight: 900;
@@ -434,4 +387,45 @@ section[id] {
 
 .services-link:hover {
   color: var(--bronze);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-info .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-details {
+    flex: none;
+  }
+  .social-media {
+    justify-content: center;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav li {
+    margin: 0.3rem 0.6rem;
+  }
+  .hero {
+    font-size: 2.1rem;
+    padding: 4rem 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    order: 2;
+  }
 }
