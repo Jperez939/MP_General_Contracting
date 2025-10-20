@@ -33,7 +33,7 @@ body{
   margin:0;
   font-family: "Bernina Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color:var(--text);
-  background-color: #EEEED7;
+  background-color: #00433D;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.5;
@@ -200,6 +200,7 @@ body{
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #EEEED7;
+  padding: 0 20px;
 }
 
 .hero-section .btn {
@@ -314,6 +315,7 @@ body{
 
 #services {
   padding: 90px 20px;
+  background-color: #EEEED7
 }
 .services-section a {
   color: #BC850E;
@@ -383,6 +385,7 @@ body{
 
 #contact {
   padding: 80px 20px;
+  background-color: #EEEED7;
 }
 /* Contact Logo */
 .contact-logo {
@@ -457,8 +460,8 @@ body{
   .header-inner{ padding: 12px 14px; }
 
   .company-name {
-  display:none;
-}
+    display:none;
+  }
 }
 
 /* Smooth scroll behavior and in-page anchor transition */
@@ -512,13 +515,13 @@ body.page-loaded{
 }
 
 .intro-logo {
-  width: 350px;
+  width: 280px;
   height: auto;
 }
 
 .intro-title {
   font-family: 'Amboy Black', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #FCB017;
   letter-spacing: 1px;
   margin-top: -3px;
