@@ -1,131 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MP General Contracting LLC</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="MP General Contracting LLC — Roof or Repair, Miguel's There. Transforming spaces with quality craftsmanship." />
 </head>
 <body>
+  <div id="intro-popup">
+    <div class="intro-content">
+      <img src="images/mpcontracting_logo.png" alt="MP General Contracting LLC Logo" class="intro-logo">
+      <h1 class="intro-title">MP General Contracting LLC</h1>
+    </div>
+  </div>
+
   <header class="site-header">
-    <img src="images/mpcontracting_logo.png" alt="MP General Contracting LLC Logo" class="header-logo" />
-    <h1>MP General Contracting LLC</h1>
-    <h2 id="header">Roofing & Contstruction</h2>
+    <div class="header-inner">
+      <!-- Logo placeholder -->
+      <a class="logo" href="#">
+        <img src="images/mpcontracting_logo.png" alt="MP General Contracting LLC logo placeholder" />
+        <span class="company-name">MP General Contracting LLC</span>
+      </a>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="hamburger" aria-label="Open navigation" aria-expanded="false">
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+</button>
+    </div>
+
+    <!-- mobile nav overlay -->
+    <nav id="mobileNav" class="mobile-nav">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+  </ul>
+</nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main id="home" class="main">
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Roof or Repair, Miguel's There</h1>
+        <p>Transforming spaces with quality craftsmanship.</p>
+        <a href="#services" class="btn">Our Services</a>
+      </div>
+    </section>
+    
 
-  <section class="hero">
-    <h2 class="herotitle">Roof or Repair, Miguel's There</h2>
-    <p>Transforming spaces with quality craftsmanship.</p>
-  </section>
+    <!-- Services -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-intro">We provide a variety of services to meet your residential and commercial needs.</p>
 
-  <section id="about" class="content about-section">
-  <div class="about-image">
-    <img src="images/about-us.jpg" alt="About MP General Contracting">
-  </div>
-  <div class="about-text">
-    <h2>About Us</h2>
-    <p>At MP General Contracting LLC, we bring over <strong>20 years of experience</strong>. We have the ability of turning dreams into reality, whether it be residential or commercial projects, we deliver quality craftsmanship and customer satisfaction.</p>
-    <p>Licensed, insured, and driven by excellence — we work with you every step of the way to create spaces that inspire and endure.</p>
-    <a href="#contact" class="btn">Start Your Project</a>
-  </div>
-</section>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3 class="service-title">Roofing</h3>
+            <p class="service-desc">Durable, weather-resistant roofing solutions to protect your home or business.</p>
+          </article>
 
-<section id="services" class="content services-section">
-  <h2>Our Services</h2>
-  <div class="service-grid">
-    <div class="service-card">
-      <img src="images/roofing.jpg" alt="Roofing">
-      <h3>Roofing</h3>
-      <p>Durable, weather-resistant roofing solutions to protect your home or business.</p>
-    </div>
-    <div class="service-card">
-      <img src="images/remodeling.jpg" alt="Remodeling">
-      <h3>Remodeling</h3>
-      <p>Transform your interiors with precision craftsmanship and stylish designs.</p>
-    </div>
-    <div class="service-card">
-      <img src="images/siding.jpg" alt="Siding">
-      <h3>Siding</h3>
-      <p>High-quality siding installation for long-lasting beauty and performance.</p>
-    </div>
-    <div class="service-card">
-      <img src="images/painting.jpg" alt="Painting">
-      <h3>Painting</h3>
-      <p>Expert interior and exterior painting to refresh and revitalize your space.</p>
-    </div>
-    <div class="service-card">
-      <img src="images/pavers.jpg" alt="Pavers">
-      <h3>Pavers</h3>
-      <p>Custom paving solutions to enhance your property’s curb appeal.</p>
-    </div>
-    <div class="service-card">
-      <img src="images/more.jpg" alt="More Services">
-      <h3>And More</h3>
-      <p>If you can imagine it, we can build it. <a href="portfolio.html" class="services-link">See our Portfolio!</a></p>
-    </div>
-  </div>
-</section>
+          <article class="service-card">
+            <h3 class="service-title">Remodeling</h3>
+            <p class="service-desc">Transform your interiors with precision craftsmanship and stylish designs.</p>
+          </article>
 
-  <section id="contact" class="content contact-info">
-  <h2>Contact Us</h2>
-  <div class="contact-container">
-    <div class="logo-company">
-      <img src="images/mpcontracting_logo.png" alt="MP General Contracting Logo" class="logo" />
-      <h3>MP General Contracting LLC</h3>
-      <h4>Roofing & Contstruction</h4>
-    </div>
+          <article class="service-card">
+            <h3 class="service-title">Siding</h3>
+            <p class="service-desc">High-quality siding installation for long-lasting beauty and performance.</p>
+          </article>
 
-    <div class="contact-details">
-      <p><strong>Phone:</strong> <a href="tel:+19734172892">973-417-2892</a></p>
-      <p><strong>Email:</strong> <a href="mailto:mpgeneralcontractingllc@gmail.com">mpgeneralcontractingllc@gmail.com</a></p>
-      <p><strong>Address:</strong> 19 Mountain Heights Ave,<br>Lincoln Park, NJ 07035</p>
+          <article class="service-card">
+            <h3 class="service-title">Painting</h3>
+            <p class="service-desc">Expert interior and exterior painting to refresh and revitalize your space.</p>
+          </article>
 
-      <div class="social-media">
-        <a href="https://www.facebook.com/Mpgeneralcontractingllc" target="_blank" aria-label="Facebook" rel="noopener">
-          <img src="images/facebook.svg" alt="Facebook" />
-        </a>
-        <a href="https://www.instagram.com/mp_general_contracting_llc/" target="_blank" aria-label="Instagram" rel="noopener">
-          <img src="images/instagram.svg" alt="Instagram" />
+          <article class="service-card">
+            <h3 class="service-title">Pavers</h3>
+            <p class="service-desc">Custom paving solutions to enhance your property’s curb appeal.</p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-title">And more</h3>
+            <p class="service-desc">If you can imagine it, we can build it. <a href="portfolio.html">See our Portfolio!</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              At MP General Contracting LLC, we bring over 20 years of experience. We have the ability of turning dreams into reality, whether it be residential or commercial projects, we deliver quality craftsmanship and customer satisfaction.<br><br>Licensed, insured, and driven by excellence — we work with you every step of the way to create spaces that inspire and endure.
+            </p>
+            <p class="owner"><strong>Miguel Perez, Owner</strong></p>
+          </div>
+          <div class="about-image">
+            <!-- decorative placeholder -->
+            <div class="image-placeholder"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <p><strong>Phone </strong><a href="tel:9734172892">973-417-2892</a></p>
+            <p><strong>Email </strong><a href="mailto:mpgeneralcontractingllc@gmail.com">mpgeneralcontractingllc@gmail.com</a></p>
+            <p><strong>Address </strong><a href="https://www.google.com/maps?q=19+Mountain+Heights+Ave,+Lincoln+Park,+NJ+07035" target="_blank" rel="noopener noreferrer"> 19 Mountain Heights Ave, Lincoln Park, NJ 07035</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Social</h3>
+            <p><a href="https://www.instagram.com/mp_general_contracting_llc/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+            <p><a href="https://www.facebook.com/Mpgeneralcontractingllc" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+          </div>
+        </div>
+
+        <p class="legal">Licensed & insured. Driven by excellence.</p>
+      </div>
+      <div class="contact-logo">
+        <a href="#home">
+          <img src="images/mpcontracting_logo.png" alt="MP General Contracting LLC Logo">
         </a>
       </div>
-    </div>
+    </section>
+
+    <footer class="site-footer">
+  <div class="container">
+    <p class="copyright">© 2025 MP General Contracting LLC. All rights reserved.</p>
   </div>
-</section>
+</footer>
 
-  <footer>
-    <p>&copy; 2025 MP General Contracting LLC</p>
-  </footer>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.content, .hero, .gallery-grid');
-
-    const options = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
-</script>
+  <script src="scripts.js"></script>
 </body>
 </html>

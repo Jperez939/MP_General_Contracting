@@ -1,65 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | MP General Contracting</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — MP General Contracting LLC</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <img src="images/mpcontracting_logo.png" alt="MP General Contracting LLC Logo" class="header-logo" />
-    <h1>MP General Contracting LLC</h1>
-    <h3>Roofing & Contstruction</h3>
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/mpcontracting_logo.png" alt="MP General Contracting LLC logo placeholder" />
+      </a>
+
+      <button id="hamburger2" class="hamburger" aria-label="Open navigation" aria-expanded="false">
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+</button>
+    </div>
+
+    
+<nav id="mobileNav2" class="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+  </ul>
+</nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-    </ul>
-  </nav>
+  <main class="main portfolio-main">
+    <section class="portfolio-hero">
+      <div class="container">
+        <h1 class="brand-title">Portfolio</h1>
+        <p class="section-intro">Explore our work below by clicking on an image to unlock the endless possibilities of our work.</p>
+      </div>
+    </section>
 
-  <section class="portfolio">
-    <div class="portfolio-item"><img src="img1.jpg" alt="Project 1" /></div>
-    <div class="portfolio-item"><img src="img2.jpg" alt="Project 2" /></div>
-    <div class="portfolio-item"><img src="img3.jpg" alt="Project 3" /></div>
-    <div class="portfolio-item"><img src="img4.jpg" alt="Project 4" /></div>
-  </section>
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- placeholders -->
+          <div class="gallery-item">Project 1 (replace)</div>
+          <div class="gallery-item">Project 2 (replace)</div>
+          <div class="gallery-item">Project 3 (replace)</div>
+          <div class="gallery-item">Project 4 (replace)</div>
+          <div class="gallery-item">Project 5 (replace)</div>
+          <div class="gallery-item">Project 6 (replace)</div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Lightbox -->
-  <div id="lightbox">
-    <span id="close">&times;</span>
-    <img id="lightbox-img" />
+    <footer class="site-footer">
+  <div class="container">
+    <p class="copyright">© 2025 MP General Contracting LLC. All rights reserved.</p>
   </div>
+</footer>
 
-  <footer>
-    <p>&copy; 2025 MP General Contracting</p>
-  </footer>
-
-  <script src="lightbox.js"></script>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.content, .hero, .gallery-grid');
-
-    const options = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
-</script>
+  <script src="scripts.js"></script>
 </body>
 </html>
