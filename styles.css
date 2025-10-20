@@ -462,6 +462,22 @@ body{
   .company-name {
     display:none;
   }
+  .contact-logo img {
+    height: 50px;
+  }
+  .intro-logo {
+    width: 280px;
+  }
+
+  .intro-title {
+    font-size: 1.2rem;
+  } 
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .section-title{
+    font-size: clamp(30px, 2.8vw, 34px);
+  }
 }
 
 /* Smooth scroll behavior and in-page anchor transition */
@@ -515,13 +531,13 @@ body.page-loaded{
 }
 
 .intro-logo {
-  width: 280px;
+  width: 350px;
   height: auto;
 }
 
 .intro-title {
   font-family: 'Amboy Black', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #FCB017;
   letter-spacing: 1px;
   margin-top: -3px;
